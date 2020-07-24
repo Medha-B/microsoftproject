@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--
+		Tic Tac Toe with Minimax AI Algorithm
+		-->
+
+		<meta charset="UTF-8" />
+		<meta content="WeCode" name="author" />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>WECode_Mars Colonization- Tic Tac Toe</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link type="text/css" rel="stylesheet" href="js_src/style.css" />
+		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<link rel="icon" href="favicon.ico">
+		
+		
+	</head>
+	<body>
+		<section id="title">
+			<!-- Nav Bar -->
+			<div class="container-fluid">
+
+				<nav class="navbar  navbar-expand-lg navbar-dark">
+					<a class="navbar-brand" href="">WeCode👧</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="#linked ">Play Game</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+
+				<!-- Title -->
+
+				<div class="row">
+					<div class="col-lg-6">
+						<h1 class="h1modify">Welcome to the playing arena Crew members!💜  </h1>
+						<!-- <br>
+						<button type="button" class="btn btn-dark btn-lg download-button"> <i class="fa fa-apple"></i> Download</button>
+						<button type="button" class="btn btn-outline-light btn-lg download-button"> <i class="fa fa-folder"></i> Download</button>
+					</div> -->
+					</div>
+
+					<div class="col-lg-6">
+						<img class="title-image" src="images.JFIF">
+					</div>
+				</div>
+			</div>
+		</section>
+		<br><br>
+						<p>Got bored!🥱</p>
+						<p> No worry..enjoy playing this game and have fun!😊</p>
+						<br><br>
+			<section id="linked">
+
+			<p id="message"></p>
+			<br />
+		<table id="tab-tic-tac-toe" cellspacing="100">
+			<tr><td id="00" onclick="clickedCell(this)"></td><td id="01" onclick="clickedCell(this)"></td><td id="02" onclick="clickedCell(this)"></td></tr>
+			<tr><td id="10" onclick="clickedCell(this)"></td><td id="11" onclick="clickedCell(this)"></td><td id="12" onclick="clickedCell(this)"></td></tr>
+			<tr><td id="20" onclick="clickedCell(this)"></td><td id="21" onclick="clickedCell(this)"></td><td id="22" onclick="clickedCell(this)"></td></tr>
+		</table>
+		<br><br>
+		<p class="pmodify"><mark>Play against</mark></p>
+		<br>
+		<div class="row">
+<!-- <p>Play against</p>
+<br> -->
+		<input type="button" value=" Computer" id="bnt-restart" onclick="restartBnt(this)"/>
+		<br>
+		<!-- <button value="human vs human" id="bnt-restart"onclick= <a href="index2.html">human vs human</a>/> -->
+		<button id="bnt-restart" type="button" value="Human"> <a class="amodify" href="index2.html">Human</a></button>
+ <br>
+  </div>
+		<!-- <br /> -->
+		</section>
+<br><br>
+
+		<section id="testimonials">
+	    <div id="carouselExampleControls" class="carousel slide" data-ride="false">
+	      <div class="carousel-inner">
+
+	        <div class="carousel-item active">
+
+	          <h1>Brought to you by WeCode Team</h1>
+							<h2>Somya Mahajan</h2>
+						<img class="imgclass" src="me.jpeg" alt="" width="200" height="200">
+
+	        </div>
+	        <div class="carousel-item">
+						<h2>Medha Bhattacharya</h2>
+					<img class="imgclass" src="medha.jpeg" alt="" width="200" height="200">
+	        </div>
+					<div class="carousel-item">
+						<h2> Swati Bhat</h2>
+					<img class="imgclass" src="swati.jpeg" alt="" width="200" height="200">
+	        </div>
+					<div class="carousel-item">
+						<h2>Parul Beniwal</h2>
+					<img class="imgclass" src="parul.jpeg" alt="" width="200" height="200">
+	        </div>
+
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+		        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		        <span class="sr-only">Previous</span>
+		      </a>
+		      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+		        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		        <span class="sr-only">Next</span>
+		      </a>
+				</div>
+					</section>
+		<script type="text/javascript" src="js_src/script.js"></script>
+					<footer id="footer">
+					 <p> Learn Inspire Grow</p>
+					 <p>📖 💡 🌺</p>
+
+
+
+					</footer>
+
+	</body>
+</html>
