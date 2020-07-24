@@ -1,0 +1,223 @@
+/* ****************** Body, head etc ****************** */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Montserrat;
+	 /* background-image: url("image2 (2).png"); */
+	background-color: black;
+}
+
+.pmodify{
+	color:white;
+	font-family: cursive;
+	font-weight: bold;
+	
+}
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+.h1modify{
+	color: black;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: Montserrat-light;
+}
+.imgclass{
+	border-radius: 100px;
+}
+.navbar-brand {
+  font-family: Ubuntu;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.title-image {
+  width: 90%;
+  /* transform: rotate(-5deg); */
+  position: absolute;
+  left: 10%;
+  border-radius: 100px;
+  padding-bottom: : 4px;
+}
+
+#title {
+  background-color: mediumslateblue;
+  color: black;
+}
+
+.carousel-item {
+  padding: 7% 10%;
+}
+
+h2{
+	font-weight: 1000px;
+	color: mediumslateblue;
+}
+
+header {
+	color: SlateBlue;
+	text-align: center;
+	height: 90px;
+	padding-top: 10px;
+	display:block;
+	margin-top: 10px;
+	margin-bottom: 60px;
+	position: relative;
+	width: 100%;
+
+}
+
+p {
+	font-size: 25pt;
+	font-weight: bold;
+	font-family: cursive;
+	text-align: center;
+	position: relative;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	color: royalblue;
+
+	background-image: url("images.JFIF");
+}
+.imgclass{
+	width:
+}
+
+/* a {
+	color: #00AEEA;
+	text-decoration: none;
+}
+a:hover {
+	color: #00AEEA;
+}
+a:visited {
+	color: #00AEEA;
+} */
+h1{
+	color: royalblue;
+	font-family: cursive;
+}
+.amodify{
+	color: black;
+}
+
+/* ******************* Table style ******************* */
+#tab-tic-tac-toe {
+	/* padding-left: 100px; */
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	font-size: 4em;
+	font-family: Sans;
+	color: white;
+	background-color: transparent;
+	width: 310px;
+	height: 300px;
+	text-align: center;
+	vertical-align: center;
+	border: 1px solid black;
+	border-radius: 5px;
+	/* box-shadow: 1px 1px 1px #CCC; */
+	/* margin-left: auto;
+	margin-right: auto; */
+	/* margin:100px;
+	padding: 5px;
+	vertical-align: center;
+	color: white;
+  border: 2px solid rgba(0, 0, 0, .3);
+  background: rgba(5, 0, 23, .40);
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  line-height: 0;
+  font-family: nanum brush script;
+  font-size: 8em;
+  font-weight: bold;
+  text-transform: uppercase;
+	border-radius:10px; */
+}
+
+/*Column style*/
+#tab-tic-tac-toe td {
+	border-collapse:collapse;
+	/* border-left: 5px solid black ;
+	border-bottom: 5px solid black; */
+	border: 2px solid rgba(0, 0, 0, .3)
+	/* background: rgba(5, 0, 23, .40); */
+	/* padding: 10px; */
+}
+
+#tab-tic-tac-toe td:first-child {
+	border-left: none;
+}
+
+#tab-tic-tac-toe tr:last-child td {
+	/* padding: 0;
+  margin:0; */
+	border-bottom: none;
+}
+
+/*Cells*/
+#tab-tic-tac-toe td {
+	cursor: pointer;
+	height: 95px;
+	width: 95px;
+}
+
+#tab-tic-tac-toe td:hover {
+	/* background: silver; */
+	background: rgba(5, 0, 23, .47);
+}
+
+/* ****************** Restart Button ****************** */
+#bnt-restart {
+	display: block;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+	background: #00AEEA;
+	font-size: 1.5em;
+	color: black;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	/* padding-bottom: 100px; */
+}
+#testimonials {
+  text-align: center;
+  background-color:black;
+  color:Black;
+	/* background-image: url("image2 (2).png"); */
+	/* background-size: 200px; */
+}
+#bnt-restart:hover {
+	background: #1DC5FF;
+}
+
+#bnt-restart:active {
+	background: #0787B3;
+}
+
+#bnt-restart:disabled {
+	color: #444;
+	background: #CECECE;
+}
+#footer{
+  text-align: center;
+  padding: 5% 15%;
+}
+#linked{
+	background-image: url("image1.png");
+}
